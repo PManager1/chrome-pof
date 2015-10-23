@@ -6,13 +6,18 @@ chrome.extension.sendMessage({}, function(response) {
 
 		// ----------------------------------------------------------
 		// This part of the script triggers when page is done loading
-		console.log("Hello. This message was sent from scripts/inject.js");
+		console.log("Hello. This message was sent from scripts/inject.js  3");
 		// ----------------------------------------------------------
 
-		
+
 		$("input:eq(3)").click();
 		console.log(' $ = ', $);
-    setInterval(function(){ $("input:eq(3)").click(); }, 2000);
+
+		// $("input[name='votea']").click(); 
+		
+		setInterval(function(){ $("input[name='votea']").click();  }, 2500);
+
+    // setInterval(function(){ $("input:eq(3)").click(); }, 2500);
 
     // alert('loaded'); 
 
